@@ -1,0 +1,4 @@
+Patient Name: John Doe
+Diagnosis: Accidental thermal burns.
+Examination shows burns covering approximately 30% TBSA.
+Vitals stable.

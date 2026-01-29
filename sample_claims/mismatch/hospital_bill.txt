@@ -1,0 +1,5 @@
+HOSPITAL BILL
+Date: 2024-01-02
+Package Code: BM001B
+Description: Moderate Burns Treatment
+Total Amount: Rs. 15000

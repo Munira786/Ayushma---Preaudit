@@ -1,0 +1,4 @@
+Patient Name: Jane Doe
+Diagnosis: Minor thermal burns.
+Examination shows burns covering approximately 5% TBSA.
+Vitals stable.
