@@ -106,18 +106,18 @@ streamlit run app.py
 
 Upload all required documents and click Run Pre-Audit.
 
-Future Scope
-1.Machine learning models for severity detection
-2.OCR support for scanned medical documents
-3.Full PM-JAY policy ingestion
-4.Secure backend APIs for hospital systems
-5.Compliance with India’s DPDP Act
+Future Scope<br>
+1.Machine learning models for severity detection<br>
+2.OCR support for scanned medical documents<br>
+3.Full PM-JAY policy ingestion<br>
+4.Secure backend APIs for hospital systems<br>
+5.Compliance with India’s DPDP Act<br>
 
 Disclaimer
-1.This project is an academic / hackathon proof-of-concept.
-2.No real patient data is used.
-3.Not intended for clinical or production deployment.
+1.This project is an academic / hackathon proof-of-concept.<br>
+2.No real patient data is used.<br>
+3.Not intended for clinical or production deployment.<br>
 
-Author
-Munira Bhabarawala, Alefiya Bootwala
+Author<br>
+Munira Bhabarawala, Alefiya Bootwala<br>
 Ayushma – AI-Based Medical Claim Pre-Audit System
