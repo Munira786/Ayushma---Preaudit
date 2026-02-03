@@ -1,0 +1,9 @@
+Patient Name: Sample Patient
+Date: 2024-02-01
+Diagnosis: Accidental thermal burns.
+Examination Details: 
+Patient presents with partial thickness thermal burns on the chest and upper arms.
+Assessment reveals burns covering approximately 25% TBSA (Total Body Surface Area).
+Wound cleaned and dressed.
+Vitals: Stable.
+Recommended Treatment: PM-JAY Burn Management Package.

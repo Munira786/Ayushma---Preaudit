@@ -1,0 +1,6 @@
+[
+  {"package_code": "BM001A", "max_amount": 15000},
+  {"package_code": "BM001B", "max_amount": 35000},
+  {"package_code": "BM001C", "max_amount": 75000},
+  {"package_code": "BM001D", "max_amount": 150000}
+]

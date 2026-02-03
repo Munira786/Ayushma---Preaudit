@@ -1,0 +1,47 @@
+{
+  "accuracy": 1.0,
+  "n_samples": 480,
+  "n_train": 384,
+  "n_test": 96,
+  "trained_at": "2026-02-03T12:37:08.788015Z",
+  "model_path": "C:\\Users\\marry\\OneDrive\\Desktop\\Ayushma\\backend\\ml\\model.pkl",
+  "report": {
+    "BM001A": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 29.0
+    },
+    "BM001B": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 18.0
+    },
+    "BM001C": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 23.0
+    },
+    "BM001D": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 26.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 96.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 96.0
+    }
+  }
+}

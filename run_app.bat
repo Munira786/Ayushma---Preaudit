@@ -1,0 +1,9 @@
+@echo off
+echo Starting Ayushma Backend...
+start "Ayushma Backend" cmd /k "cd backend && uvicorn app:app --port 8000 --reload"
+
+echo Waiting for backend to initialize...
+timeout /t 5
+
+echo Starting Ayushma Frontend...
+streamlit run app.py

@@ -1,0 +1,45 @@
+[
+    {
+        "package_code": "BM001A",
+        "min_tbsa": 0,
+        "max_tbsa": 10,
+        "max_amount": 15000,
+        "required_documents": [
+            "clinical_notes",
+            "hospital_bill"
+        ]
+    },
+    {
+        "package_code": "BM001B",
+        "min_tbsa": 10,
+        "max_tbsa": 40,
+        "max_amount": 35000,
+        "required_documents": [
+            "clinical_notes",
+            "hospital_bill"
+        ]
+    },
+    {
+        "package_code": "BM001C",
+        "min_tbsa": 40,
+        "max_tbsa": 60,
+        "max_amount": 75000,
+        "required_documents": [
+            "clinical_notes",
+            "hospital_bill",
+            "discharge_summary"
+        ]
+    },
+    {
+        "package_code": "BM001D",
+        "min_tbsa": 60,
+        "max_tbsa": 100,
+        "max_amount": 150000,
+        "required_documents": [
+            "clinical_notes",
+            "hospital_bill",
+            "discharge_summary",
+            "photographs"
+        ]
+    }
+]
