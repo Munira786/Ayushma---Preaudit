@@ -1,0 +1,14 @@
+DISCHARGE SUMMARY
+Patient: Sample Patient
+Admitted: 2024-02-01
+Discharged: 2024-02-05
+
+Course in Hospital:
+Patient admitted with thermal burns.
+Managed conservatively with dressings and IV fluids.
+Recovery was uneventful.
+Wounds healing well.
+
+Discharge Advice:
+Keep wounds clean.
+Follow up in 1 week.

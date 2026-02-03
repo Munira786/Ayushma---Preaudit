@@ -1,0 +1,17 @@
+HOSPITAL BILL RECEIPT
+Hospital: General Medical Center
+Date: 2024-02-05
+Patient: Sample Patient
+
+Itemized Charges:
+1. Bed Charges (5 days): 10000
+2. Nursing Charges: 5000
+3. Medications & Consumables: 10000
+4. Doctor Consultation: 5000
+
+Total Billed Amount: Rs. 30000
+
+Claim Details:
+Package Code: BM001B
+Package Description: Burns 10-40% TBSA
+(Max Package Limit: Rs. 35000)
