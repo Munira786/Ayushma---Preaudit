@@ -113,7 +113,7 @@ Future Scope<br>
 4.Secure backend APIs for hospital systems<br>
 5.Compliance with India’s DPDP Act<br>
 
-Disclaimer
+Disclaimer<br>
 1.This project is an academic / hackathon proof-of-concept.<br>
 2.No real patient data is used.<br>
 3.Not intended for clinical or production deployment.<br>
