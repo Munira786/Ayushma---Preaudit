@@ -1,0 +1,2 @@
+Patient admitted with thermal burns.
+Assessment shows 30% TBSA burns.
