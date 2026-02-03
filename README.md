@@ -1,76 +1,123 @@
-# 🏥 Ayushma – AI-Based Medical Insurance Claim Pre-Audit System
+# Ayushma – AI-Based Medical Insurance Claim Pre-Audit System
 
-Ayushma is an AI-assisted medical insurance claim pre-audit system designed to reduce claim rejections and delays under PM-JAY (Ayushman Bharat).  
-It validates hospital claims **before submission** by checking medical severity, package code correctness, billing limits, and document completeness.
+Ayushma is an AI-assisted medical insurance claim **pre-audit system** designed to reduce claim rejections and delays under **PM-JAY (Ayushman Bharat)**.
 
-This project is built as a **hackathon MVP** with a focus on reliability, explainability, and real-world feasibility.
+The system checks hospital claims **before submission** by validating medical severity, insurance package codes, billing limits, and required documents.
+
+This project is developed as a **hackathon MVP (proof of concept)**.
 
 ---
 
-## 🚩 Problem Statement
+## Problem Statement
 
-In India, nearly **1 out of every 5 healthcare insurance claims** is rejected or delayed due to:
-- Incorrect package code selection  
-- Billing amount exceeding policy limits  
-- Missing or inconsistent documents  
+A significant number of health insurance claims in India are rejected or delayed due to:
+- Incorrect PM-JAY package code selection  
+- Billing amounts exceeding policy limits  
+- Missing or inconsistent medical documents  
 
 These issues lead to:
 - Revenue loss for hospitals  
 - Delayed patient discharge  
-- Heavy rework for billing staff  
-
-Ayushma addresses this by performing a **pre-submission audit** of claims.
+- Increased workload for billing staff  
 
 ---
 
-## 💡 Solution Overview
+## Proposed Solution
 
-Ayushma works as an **AI-powered pre-audit assistant** for hospital billing teams.
+Ayushma acts as a **pre-audit assistant** for hospital billing teams.
 
-### Input Documents
-1. Clinical Notes (diagnosis and severity)
-2. Discharge Summary
-3. Hospital Bill (package code and total amount)
-4. Photograph Evidence (for demo purpose)
-
-### Output
-- Validated or suggested PM-JAY package code  
-- Approved claim amount based on policy limits  
-- Flagged amount (if any)  
-- Overall claim status:
-  - CLEAN  
-  - PARTIAL_APPROVAL  
-  - REVIEW_REQUIRED  
-- Clear reasons and recommendations for billing staff  
+Instead of submitting a claim directly to the insurer, the hospital uploads the claim documents to Ayushma, which identifies errors and mismatches **before submission**, reducing rejections and rework.
 
 ---
 
-## 🧠 AI Logic (Hackathon MVP)
+## Input Documents
 
+Ayushma requires the following documents:
+1. **Clinical Notes** – diagnosis and severity details  
+2. **Discharge Summary** – treatment confirmation  
+3. **Hospital Bill** – package code and total billed amount  
+4. **Photograph Evidence** – treatment proof (demo purpose)
+
+---
+
+## System Functionality
+
+Ayushma performs the following checks:
 - Extracts medical severity from clinical notes (example: % TBSA for burns)
-- Maps severity to PM-JAY package slabs
+- Maps severity to the correct PM-JAY package code
 - Validates:
   - Package code correctness
-  - Billing amount within policy limit
-  - Presence of all required documents
-- Produces **explainable results** instead of black-box decisions
-
-This MVP uses a **controlled AI + rule-based engine** to ensure stable and predictable results during demos.
+  - Billing amount within policy limits
+  - Availability of all required documents
+- Generates a structured **Pre-Audit Report**
 
 ---
 
-## 🛠️ Tech Stack
+## Output
 
-- Frontend: Streamlit (Python)
-- Backend Logic: Python
-- Policy Dataset: PM-JAY package slabs (sampled)
-- UI: Custom CSS (Light Theme)
-- Deployment: Local / Streamlit
+The system generates:
+- Suggested or validated PM-JAY package code  
+- Approved claim amount  
+- Flagged amount (if billing exceeds limit)  
+- Overall claim status:
+  - **CLEAN**
+  - **PARTIAL_APPROVAL**
+  - **REVIEW_REQUIRED**
+- Clear reasons and recommendations for correction
 
 ---
 
-## 📂 Test Documents (For Demo & Evaluation)
+## Technology Stack
 
-This repository includes a **test_documents/** folder to help evaluators easily test different claim scenarios.
+- **Frontend:** Streamlit (Python)
+- **Backend Logic:** Python
+- **Policy Dataset:** PM-JAY package slabs (sampled)
+- **UI:** Custom light-theme dashboard
+
+---
+
+## Test Documents (For Demo)
+
+This repository includes a `test_documents/` folder to help evaluators test different claim scenarios.
 
 ### Folder Structure
+test_documents/
+├── clean_claim/
+├── partial_claim/
+├── review_claim/
+
+
+Each folder contains:
+- `clinical_notes.txt`
+- `discharge_summary.txt`
+- `hospital_bill.txt`
+- `photo.jpg`
+
+### Usage
+- Upload files from **clean_claim/** → CLEAN result  
+- Upload files from **partial_claim/** → PARTIAL_APPROVAL  
+- Upload files from **review_claim/** → REVIEW_REQUIRED  
+
+---
+
+## How to Run the Project
+pip install streamlit
+streamlit run app.py
+
+Upload all required documents and click Run Pre-Audit.
+
+Future Scope
+1.Machine learning models for severity detection
+2.OCR support for scanned medical documents
+3.Full PM-JAY policy ingestion
+4.Secure backend APIs for hospital systems
+5.Compliance with India’s DPDP Act
+
+Disclaimer
+1.This project is an academic / hackathon proof-of-concept.
+2.No real patient data is used.
+3.Not intended for clinical or production deployment.
+
+Author
+Munira Bhabarawala, Alefiya Bootwala
+Ayushma – AI-Based Medical Claim Pre-Audit System
