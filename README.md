@@ -1,118 +1,152 @@
-# 🏥 Ayushma – AI-Based Medical Insurance Claim Pre-Audit System
+🏥 Ayushma – AI-Based Medical Insurance Claim Pre-Audit System
 
-Ayushma is an AI-assisted medical insurance claim **pre-audit system** designed to reduce claim rejections and delays under **PM-JAY (Ayushman Bharat)** by validating claims **before submission**.
+Ayushma is an AI-assisted medical insurance claim pre-audit system designed to reduce claim rejections and processing delays under PM-JAY (Ayushman Bharat).
+It validates hospital claims before submission by checking medical severity, package code correctness, billing limits, and document completeness.
 
-This project was built as a **hackathon MVP**, focusing on reliability, explainability, and real-world feasibility in healthcare systems.
+This project was built as a hackathon MVP focusing on correctness, explainability, and real-world feasibility.
 
----
+🚩 Problem Statement
 
-## 🚨 Problem Statement
+In India, 1 out of every 5 health insurance claims is rejected or delayed due to:
 
-In India, a large percentage of health insurance claims are **rejected or delayed** due to:
-- Incorrect package code selection  
-- Missing or inconsistent documents  
-- Billing amounts exceeding policy limits  
+Incorrect package code selection
 
-These issues increase hospital workload, delay patient discharge, and create financial stress.
+Billing amount exceeding policy limits
 
----
+Missing or inconsistent documents
 
-## 💡 Solution Overview
+These issues cause:
 
-Ayushma performs a **pre-submission audit** of medical insurance claims by:
-- Analyzing clinical documents
-- Validating PM-JAY package rules
-- Flagging errors **before** final claim submission
+Revenue loss for hospitals
 
-The system helps hospitals correct mistakes early, reducing rejection rates.
+Delayed patient discharge
 
----
+High rework burden on billing staff
 
-## 🧠 How Ayushma Works
+Ayushma solves this by acting as a pre-submission audit assistant.
 
-1. User uploads required documents:
-   - Clinical Notes
-   - Discharge Summary
-   - Hospital Bill
-   - Supporting Photographs
+💡 Solution Overview
 
-2. Ayushma:
-   - Extracts relevant medical and billing information
-   - Predicts an appropriate PM-JAY package (AI-assisted)
-   - Validates billing amounts against policy limits
+Ayushma performs an automated pre-audit using AI-assisted rule validation.
 
-3. Generates a **Pre-Audit Report**:
-   - CLEAN
-   - PARTIAL APPROVAL
-   - REVIEW REQUIRED
+Input Documents:
 
----
+Clinical Notes – diagnosis & severity (e.g., % TBSA for burns)
 
-## ⚙️ Technology Stack
+Discharge Summary – treatment confirmation
 
-### Frontend
-- **Streamlit (Python)**
-- Custom CSS for modern UI
+Hospital Bill – package code & total amount
 
-### Backend (MVP)
-- Python-based audit engine
-- Rule-based PM-JAY validation
-- AI-assisted logic (demo-safe mode)
+Photograph Evidence – treatment proof (demo purpose)
 
-### AI / ML (Architecture)
-- NLP-based package prediction (TF-IDF + Logistic Regression)
-- Designed for future integration into live backend
+Output:
 
----
+Suggested / validated PM-JAY package code
 
-## 📊 Key Features
+Approved amount based on policy limits
 
-- PM-JAY package validation
-- Billing limit checks
-- Missing document detection
-- Explainable audit decisions
-- Demo-safe and reliable execution
+Flagged amount (if any)
 
----
+Overall claim status:
 
-## 🧪 Demo Mode Note
+CLEAN
 
-For hackathon submission, the system runs in a **demo-safe audit mode** to ensure:
-- Stable output
-- No runtime failures
-- Clear explanation of results
+PARTIAL_APPROVAL
 
-The backend architecture supports full ML inference and can be extended post-hackathon.
+REVIEW_REQUIRED
 
----
+Clear explanations and recommendations
 
-## 🔮 Future Enhancements
+🧠 AI Logic (MVP)
 
-- Full ML-based severity prediction
-- Image-based burn assessment
-- Fraud and anomaly detection
-- Integration with government health portals
-- Real-time hospital system integration
+Severity Extraction: Reads clinical notes to detect medical severity
 
----
+Package Mapping: Maps severity to PM-JAY package slabs
 
-## 👩‍💻 Team
+Policy Validation:
 
-**Project Name:** Ayushma  
-**Domain:** Healthcare | Insurance | AI  
-**Built for:** CSRBOX Hackathon  
+Package code match
 
----
+Billing limit check
 
-## ⚠️ Disclaimer
+Required document check
 
-This is an **academic proof-of-concept**.  
-No real patient data is used.  
-Not intended for clinical or legal decision-making.
+Explainable Output (no black-box decisions)
 
----
+⚠️ This MVP uses a controlled AI + rule engine approach for reliability in hackathon demos.
 
-## 📌 Repository
+🛠️ Tech Stack
 
-GitHub:  
-https://github.com/Munira786/Ayushma---Preaudit
+Frontend: Streamlit (Python)
+
+Backend Logic: Python
+
+Policy Dataset: PM-JAY package slabs (sampled)
+
+UI Design: Custom CSS (Light Theme)
+
+Deployment: Local / Streamlit Cloud (optional)
+
+📂 Test Documents (Demo Ready)
+
+To ensure stable and predictable demo results, this repository includes a test_documents/ folder.
+
+Folder Structure:
+test_documents/
+├── clean_claim/
+│   ├── clinical_notes.txt
+│   ├── discharge_summary.txt
+│   ├── hospital_bill.txt
+│   └── photo.jpg
+├── partial_claim/
+│   ├── clinical_notes.txt
+│   ├── discharge_summary.txt
+│   ├── hospital_bill.txt
+│   └── photo.jpg
+├── review_claim/
+│   ├── clinical_notes.txt
+│   ├── discharge_summary.txt
+│   ├── hospital_bill.txt
+│   └── photo.jpg
+
+How to Use:
+
+Upload files from:
+
+clean_claim/ → CLEAN result
+
+partial_claim/ → PARTIAL_APPROVAL
+
+review_claim/ → REVIEW_REQUIRED
+
+This helps judges test the system without ambiguity.
+
+🚀 How to Run the Project
+pip install streamlit
+streamlit run app.py
+
+
+Upload the required documents and click Run Pre-Audit.
+
+🔮 Future Scope
+
+Train ML models for severity extraction
+
+OCR integration for scanned PDFs
+
+Full PM-JAY policy ingestion using RAG
+
+Secure backend APIs for hospital systems
+
+DPDP Act compliant data handling
+
+⚠️ Disclaimer
+
+This project is an academic / hackathon proof-of-concept.
+No real patient data is used.
+Not intended for clinical or production use.
+
+👩‍💻 Team
+
+Project Lead: Munira Bhabarawala, Alefiya Bootwala
+Domain: AI | Healthcare | Insurance Automation
