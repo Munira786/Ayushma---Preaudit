@@ -1,0 +1,1541 @@
+package_id,speciality,description,amount,documents_pre_auth,los
+BM001A,BM (Burns  Management),Thermal burns–% Total Body Surface  Area Burns (TBSA) - any %  (not requiring admission).  Needs at least 5-6 dressing,"7,000","Clinical Notes,  MLC copy with  number, Extent  of burns visible  on photograph  (with rule of 9  chart)",3
+BM001B,BM (Burns  Management),"Thermal burns–% Total Body Surface  Area Burns (TBSA): Upto 40 %;  Includes % TBSA skin grafted, flap  cover, follow-up dressings etc. as  deemed necessary; Surgical  procedures are required for deep  burns that are not amenable to heal  with dressings alone.","40,000","Clinical Notes,  MLC copy with  number, Extent  of upto 40%  burns visible on  photograph  (with rule of 9  chart)",4
+BM001C,BM (Burns  Management),"Thermal burns–% Total Body Surface  Area Burns (TBSA): 40% - 60 %;  Includes % TBSA skin grafted, flap  cover, follow-up dressings etc. as  deemed necessary; Surgical  procedures are required for deep  burns that are not amenable to heal  with dressings alone.","50,000","Clinical Notes,  MLC copy with  number, Extent  of upto 40% -  60% burns  visible on  photograph  (with rule of 9  chart)",2
+BM001D,BM (Burns  Management),"Thermal burns–% Total Body Surface  Area Burns (TBSA): > 60 %; Includes  % TBSA skin grafted, flap cover,  follow-up dressings etc. as deemed  necessary; Surgical procedures are  required for deep burns that are not  amenable to heal with dressings  alone.","80,000","Clinical Notes,  MLC copy with  number, Extent  > 60% burns  visible on  photograph  (with rule of 9  chart)",2
+BM002A,BM (Burns  Management),Scald burns–% Total Body Surface  Area Burns (TBSA) - any %  (not requiring admission).  Needs at least 5-6 dressing,"7,000","Clinical Notes,  MLC copy with  number, Extent  of burns visible  on photograph  (with rule of 9  chart)",3
+BM002B,BM (Burns  Management),"Scald burns–% Total Body Surface  Area Burns (TBSA): Upto 40 %;  Includes % TBSA skin grafted, flap  cover, follow-up dressings etc. as  deemed necessary; Surgical  procedures are required for deep  burns that are not amenable to heal  with dressings alone.","40,000","Clinical Notes,  MLC copy with  number, Extent  of upto 40%  burns visible on  photograph  (with rule of 9  chart)",3
+BM002C,BM (Burns  Management),"Scald burns–% Total Body Surface  Area Burns (TBSA): 40% - 60 %;  Includes % TBSA skin grafted, flap  cover, follow-up dressings etc. as  deemed necessary; Surgical  procedures are required for deep  burns that are not amenable to heal  with dressings alone.","50,000","Clinical Notes,  MLC copy with  number, Extent  of upto 40% -  60% burns  visible on  photograph  (with rule of 9  chart)",3
+BM002D,BM (Burns  Management),"Scald burns–% Total Body Surface  Area Burns (TBSA): >  60 %; Includes  % TBSA skin grafted, flap cover,  follow-up dressings etc. as deemed  necessary; Surgical procedures are  required for deep burns that are not  amenable to heal with dressings  alone.","80,000","Clinical Notes,  MLC copy with  number, Extent  > 60% burns  visible on  photograph  (with rule of 9  chart)",5
+BM003A,BM (Burns  Management),Flame burns–% Total Body Surface  Area Burns (TBSA) - any %  (not requiring admission).  Needs at least 5-6 dressing,"7,000","Clinical Notes,  MLC copy with  number, Extent  of burns visible  on photograph  (with rule of 9  chart)",5
+BM003B,BM (Burns  Management),"Flame burns–% Total Body Surface  Area Burns (TBSA): Upto 40 %;  Includes % TBSA skin grafted, flap  cover, follow-up dressings etc. as  deemed necessary; Surgical  procedures are required for deep  burns that are not amenable to heal  with dressings alone.","40,000","Clinical Notes,  MLC copy with  number, Extent  of upto 40%  burns visible on  photograph  (with rule of 9  chart)",3
+BM003C,BM (Burns  Management),"Flame burns–% Total Body Surface  Area Burns (TBSA): 40 % - 60 %;  Includes % TBSA skin grafted, flap  cover, follow-up dressings etc. as  deemed necessary; Surgical  procedures are required for deep  burns that are not amenable to heal  with dressings alone.","50,000","Clinical Notes,  MLC copy with  number, Extent  of upto 40% -  60% burns  visible on  photograph  (with rule of 9  chart)",3
+BM003D,BM (Burns  Management),"Flame burns–% Total Body Surface  Area Burns (TBSA): >  60 %; Includes  % TBSA skin grafted, flap cover,  follow-up dressings etc. as deemed  necessary; Surgical procedures are  required for deep burns that are not  amenable to heal with dressings  alone.","80,000","Clinical Notes,  MLC copy with  number, Extent  > 60% burns  visible on  photograph  (with rule of 9  chart)",2
+BM004A,BM (Burns  Management),"Electrical contact burns–Electrical  contact burns: Low voltage - without  part of limb / limb loss; Includes %  TBSA skin grafted, flap cover, follow-  up dressings etc. as deemed  necessary; Surgical procedures are  required for deep burns that are not  amenable to heal with dressings  alone.","30,000","Circumstances  Post Treatment  that led to low  voltage  electrical  contact burns,  MLC copy with  number. %  burns visible on  clinical  photograph  (with rule of 9  chart)",2
+BM004B,BM (Burns  Management),"Electrical contact burns–Electrical  contact burns: Low voltage - with part  of limb / limb loss; Includes % TBSA  skin grafted, flap cover, follow-up  dressings etc. as deemed necessary;  Surgical procedures are required for  deep burns that are not amenable to  heal with dressings alone.","40,000","Circumstances  Post Treatment  that led to low  voltage  electrical  contact burns,  MLC copy with  number. %  burns visible on  clinical  photograph  (with rule of 9  chart)",2
+BM004C,BM (Burns  Management),"Electrical contact burns–Electrical  contact burns: High voltage - with part  of limb / limb loss; Includes % TBSA  skin grafted, flap cover, follow-up  dressings etc. as deemed necessary;  Surgical procedures are required for  deep burns that are not amenable to  heal with dressings alone.","60,000","Circumstances  Post Treatment  that led to High  voltage  electrical  contact burns,  MLC copy with  number. %  burns visible on  clinical  photograph  (with rule of 9  chart)",4
+BM004D,BM (Burns  Management),"Electrical contact burns–Electrical  contact burns: High voltage - without  part of limb / limb loss; Includes %  TBSA skin grafted, flap cover, follow-  up dressings etc. as deemed  necessary; Surgical procedures are  required for deep burns that are not  amenable to heal with dressings  alone.","50,000","Circumstances  Post Treatment  that led to High  voltage  electrical  contact burns,  MLC copy with  number. %  burns visible on  clinical  photograph  (with rule of 9  chart)",1
+BM005A,BM (Burns  Management),"Chemical burns–Chemical burns:  Without significant facial scarring  and/or loss of function; Includes %  TBSA skin grafted, flap cover, follow-  up dressings etc. as deemed  necessary; Surgical procedures are  required for deep burns that are not  amenable to heal with dressings  alone.","40,000","Circumstances  Post Treatment  that led to  chemical burns,  showing treated  MLC copy with  number, % and  area burnt  visible on  clinical  photograph  (with rule of 9  chart)",4
+BM005B,BM (Burns  Management),"Chemical burns–Chemical burns:  With significant facial scarring and/or  loss of function; Includes % TBSA  skin grafted, flap cover, follow-up  dressings etc. as deemed necessary;  Surgical procedures are required for  deep burns that are not amenable to  heal with dressings alone.","60,000","Circumstances  Post Treatment  that led to  chemical burns,  showing treated  MLC copy with  number, % and  area burnt  visible on  clinical  photograph  (with rule of 9  chart)",1
+BM006A,BM (Burns  Management),"Post Burn Contracture surgeries for  Functional Improvement–Post Burn  Contracture surgeries for Functional  Improvement (Package including  splints, pressure garments, silicone -  gel sheet and physiotherapy):  Excluding Neck contracture;  Contracture release with - Split  thickness Skin Graft (STSG) / Full  Thickness Skin Graft (FTSG) / Flap  cover is done for each joint with post -  operative regular dressings for STSG  / FTSG / Flap cover.","50,000","Clinical history  detailing the  burns - etiology,  Detailed discharge  treatment given  summary. Detailed  and resultant  contractures  left. Functional  disability to be  detailed and  expected  functional  improvement to  be shared. Pre-  op clinical  photograph.",1
+BM006B,BM (Burns  Management),"Post Burn Contracture surgeries for  Functional Improvement–Post Burn  Contracture surgeries for Functional  Improvement (Package including  splints, pressure garments, silicone -  gel sheet and physiotherapy): Neck  contracture; Contracture release with -  Split thickness Skin Graft (STSG) /  Full Thickness Skin Graft (FTSG) /  Flap cover is done for each joint with  post-operative regular dressings for  STSG / FTSG / Flap cover.","50,000","Clinical history  detailing the  burns - etiology,  Detailed discharge  treatment given  summary. Detailed  and resultant  contractures  left. Functional  disability to be  detailed and  expected  functional  improvement to  be shared. Pre-  op clinical  photograph.",1
+ER001A,ER (Emergency  Room Packages),Laceration - Suturing /  Dressing–Laceration - Suturing /  Dressing,"2,000",Clinical notes  with planned  line of  treatment with  pre-clinical  photograph,1
+ER002A,ER (Emergency  Room Packages),Cardiopulmonary  emergency–Emergency with stable  cardiopulmonary status,"2,000","Clinical notes  with planned  line of  treatment, ECG",1
+ER002B,ER (Emergency  Room Packages),Cardiopulmonary  emergency–Emergency with unstable  cardiopulmonary status with  resuccitation,"10,000","Clinical notes  with planned  line of  treatment, ECG",2
+ER003A,ER (Emergency  Room Packages),Animal bites (Excluding Snake  Bite)–Animal bites (Excluding Snake  Bite),"1,700",Classification of  Beneficiary  bites with pre-  clinical  photograph,3
+IN001A,IN (Interventional  Neuroradiology),Dural AVMs / AVFs–Dural AVMs (per  sitting) with glue,"70,000",Clinical notes  and CT/MRI/  DSA confirming  Radiographic stills  the diagnosis,5
+IN001B,IN (Interventional  Neuroradiology),Dural AVMs / AVFs–Dural AVFs (per  sitting) with glue,"70,000",Clinical notes  and CT/MRI/  DSA confirming  Radiographic stills  the diagnosis,5
+IN001C,IN (Interventional  Neuroradiology),Dural AVMs / AVFs–Dural AVMs (per  sitting) with onyx,"150,000",Clinical notes  and CT/MRI/  DSA confirming  Radiographic stills  the diagnosis,5
+IN001D,IN (Interventional  Neuroradiology),Dural AVMs / AVFs–Dural AVFs (per  sitting) with onyx,"150,000",Clinical notes  and CT/MRI/  DSA confirming  Radiographic stills  the diagnosis,5
+IN002A,IN (Interventional  Neuroradiology),Cerebral & Spinal AVM embolization -  Using Histoacryl (per sitting)–Cerebral  AVM embolization - Using Histoacryl  (per sitting),"100,000",Clinical notes  and CT/MRI/  DSA confirming  Radiographic stills  the diagnosis,2
+IN002B,IN (Interventional  Neuroradiology),Cerebral & Spinal AVM embolization -  Using Histoacryl (per sitting)–Spinal  AVM embolization - Using Histoacryl  (per sitting),"100,000",Clinical notes  and CT/MRI/  DSA confirming  Radiographic stills  the diagnosis,3
+IN003A,IN (Interventional  Neuroradiology),Coil embolization for aneurysms  (includes cost of first 3 coils + balloon  and / or stent if used)–Coil  embolization for aneurysms  (includes cost of first 3 coils + balloon  and / or stent if used),"124,000",Clinical notes  and CT  Angio/MRA/  DSA confirming  the diagnosis  for which the  procedure is  done,2
+IN004A,IN (Interventional  Neuroradiology),"Carotico-cavernous Fistula (CCF)  embolization–Carotico-cavernous  Fistula (CCF) embolization with coils.  [includes 5 coils, guide catheter, micro  catheter, micro-guidewire, general  items]","150,000",Clinical notes  and CT/MRI/  DSA confirming  the diagnosis,1
+IN004B,IN (Interventional  Neuroradiology),"Carotico-cavernous Fistula (CCF)  embolization–Carotid-cavernous  Fistula (CCF) embolization with  balloon  (includes one balloon, guide catheter,  micro-catheter, micro-guidewire,  general items)","75,000",Clinical notes  and CT/MRI/  DSA confirming  the diagnosis,2
+IN005A,IN (Interventional  Neuroradiology),Pre-operative tumour embolization  (per session)–Pre-operative tumour  embolization  (per session),"40,000",Clinical notes  and CT/MRI/  DSA confirming  Detailed discharge  the diagnosis,5
+IN006A,IN (Interventional  Neuroradiology),Intracranial balloon angioplasty with  stenting–Intracranial balloon  angioplasty with stenting,"160,000",Clinical notes  and CT/MRI/  DSA confirming  Detailed discharge  the diagnosis,1
+IN007A,IN (Interventional  Neuroradiology),Intracranial thrombolysis / clot  retrieval–Intracranial thrombolysis /  clot retrieval,"160,000",Clinical notes  and CT/MRI/  DSA confirming  Detailed discharge  the diagnosis,3
+IN008A,IN (Interventional  Neuroradiology),Balloon test occlusion–Balloon test  occlusion,"70,000",Clinical notes  and CT/MRI/  DSA confirming  Detailed discharge  the diagnosis,3
+IN009A,IN (Interventional  Neuroradiology),Parent vessel occlusion -  Basic–Parent vessel occlusion - Basic,"30,000",Clinical notes  and CT/MRI/  DSA confirming  the diagnosis,2
+IN010A,IN (Interventional  Neuroradiology),Vertebroplasty –Vertebroplasty,"40,000",Clinical notes  and CT/MRI  confirming the  diagnosis and  need of  procedure;  MLC/ FIR if  traumatic,3
+MC001A,MC (Cardiology),Right / Left Heart  Catheterization–Right Heart  Catheterization,"5,000","Clinical notes  with planned  line of  treatment,  ECG, ECHO",2
+MC001B,MC (Cardiology),Right / Left Heart Catheterization–Left  Heart Catheterization,"5,000","Clinical notes  with planned  line of  treatment,  ECG, ECHO",5
+MC002A,MC (Cardiology),Catheter directed Thrombolysis–For  Deep vein thrombosis (DVT),"30,800",Clinical notes  and doppler  establishing  presence of  DVT,1
+MC002B,MC (Cardiology),Catheter directed Thrombolysis–For  Mesenteric Thrombosis,"30,800",Clinical notes  and doppler  establishing  presence of  mesentric  thrombosis,4
+MC002C,MC (Cardiology),Catheter directed Thrombolysis–For  Peripheral vessels,"30,800",Clinical notes  and doppler  establishing  presence of  peripheral  vessel  thrombosis,1
+MC003A,MC (Cardiology),Balloon Dilatation–Coartication of  Aorta,"71,600",ECHO & CT  angiogram  report & stills,2
+MC003B,MC (Cardiology),Balloon Dilatation–Pulmonary Artrey  Stenosis,"71,600",ECHO & CT  angiogram  report & stills,2
+MC004A,MC (Cardiology),Balloon Pulmonary / Aortic  Valvotomy–Balloon Pulmonary  Valvotomy,"56,400",Clinical notes  with planned  line of  treatment and  ECHO report  with stills.,2
+MC004B,MC (Cardiology),Balloon Pulmonary / Aortic  Valvotomy–Balloon Aortic Valvotomy,"56,400",Clinical notes  with planned  line of  treatment and  ECHO report  with stills.,2
+MC005A,MC (Cardiology),Balloon Mitral Valvotomy–Balloon  Mitral Valvotomy,"90,700",Clinical notes  with planned  line of  treatment and  ECHO report  with stills.,2
+MC006A,MC (Cardiology),Balloon Atrial Septostomy–Balloon  Atrial Septostomy,"24,400",Clinical notes  and ECHO /  and doppler  stills + reports  showing the  transposition of  the great  arteries (TGA)  & need of  septostomy,2
+MC007A,MC (Cardiology),ASD Device Closure–ASD Device  Closure,"98,900","Clinical notes  and ECHO  report showing  with still images,  ASD",2
+MC008A,MC (Cardiology),VSD Device Closure–VSD Device  Closure,"109,900","Clinical notes  and ECHO  report showing  with still images,  VSD",2
+MC009A,MC (Cardiology),PDA Device Closure–PDA Device  Closure,"55,000","Clinical notes  and ECHO  report showing  with still images,  PDA",2
+MC010A,MC (Cardiology),PDA stenting–PDA stenting,"71,860",Clinical notes  and ECHO  report / Angio  showing PDA,2
+MC011A,MC (Cardiology),"PTCA, inclusive of diagnostic  angiogram–PTCA, inclusive of  diagnostic angiogram","72,200","ECG, ECHO,  CAG stills  showing blocks  with still images,  & Reports",3
+MC012A,MC (Cardiology),Electrophysiological  Study–Electrophysiological Study,"66,000","Clinical notes  with planned  line of  treatment,  ECG, ECHO,  Serum  Elctrolytes",5
+MC012B,MC (Cardiology),Electrophysiological  Study–Electrophysiological Study  with Radio Frequency Ablation,"96,000","Clinical notes  with planned  line of  treatment,  ECG, ECHO,  Serum  Elctrolytes",1
+MC013A,MC (Cardiology),Percutaneous Transluminal Septal  Myocardial Ablation–Percutaneous  Transluminal Septal Myocardial  Ablation,"34,000","Clinical notes  and ECG,  ECHO, CAG  stills showing  blaocks  justifying the  procedure",4
+MC014A,MC (Cardiology),Temporary Pacemaker  implantation–Temporary Pacemaker  implantation,"19,200",Clinical notes  and ECG +  Report by  cardiologist  necessitating  procedure,4
+MC015A,MC (Cardiology),Single Chamber Permanent  Pacemaker Implantation–Permanent  Pacemaker Implantation -  Single Chamber,"69,500",Clinical notes  and ECG +  Report by  cardiologist  necessitating  procedure;  Angiogram if  done,5
+MC016A,MC (Cardiology),Double Chamber Permanent  Pacemaker Implantation –Permanent  Pacemaker Implantation -  Double Chamber,"108,000",Clinical notes  and ECG +  Report by  cardiologist  necessitating  procedure;  Angiogram if  done,1
+MC017A,MC (Cardiology),Peripheral Angioplasty–Peripheral  Angioplasty,"55,500","ECHO,  Doppler, Angio  stills showing  blocks &  Reports",3
+MC018A,MC (Cardiology),Bronchial artery Embolisation  (for Haemoptysis)–Bronchial artery  Embolisation  (for Haemoptysis),"32,800",Clinical notes  and Chest X-  Ray / HRCT  chest with CT  Pulmonary  Angiogram &  other  investigations,7
+MC019A,MC (Cardiology),Pericardiocentesis–Pericardiocentesis,"12,100",Clinical notes  and ECHO  report justifying  post procedure  need of  procedure,2
+MC020A,MC (Cardiology),Systemic Thrombolysis (for  MI)–Systemic Thrombolysis (for MI),"17,900","Serial ECGs  showing MI,  Cardiac  markers - CPK-  MB, TROP I or  TROP T",3
+MG001A,MG (General  Medicine),Acute febrile illness–Acute febrile  illness,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",3
+MG002A,MG (General  Medicine),Severe sepsis–Severe sepsis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",3
+MG002B,MG (General  Medicine),Severe sepsis–Septic shock,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",2
+MG003A,MG (General  Medicine),Malaria–Malaria,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",3
+MG003B,MG (General  Medicine),Malaria–Complicated malaria,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",2
+MG004A,MG (General  Medicine),Dengue fever–Dengue fever,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",5
+MG004B,MG (General  Medicine),Dengue fever–Dengue hemorrhagic  fever,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",3
+MG004C,MG (General  Medicine),Dengue fever–Dengue shock  syndrome,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",2
+MG005A,MG (General  Medicine),Chikungunya fever–Chikungunya  fever,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",2
+MG006A,MG (General  Medicine),Enteric fever–Enteric fever,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",5
+MG007A,MG (General  Medicine),HIV with complications–HIV with  complications,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",1
+MG008A,MG (General  Medicine),Leptospirosis–Leptospirosis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",2
+MG009A,MG (General  Medicine),Acute gastroenteritis with  dehydration–Acute gastroenteritis with  moderate dehydration,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",5
+MG009B,MG (General  Medicine),Acute gastroenteritis with  dehydration–Acute gastroenteritis with  severe dehydration,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",5
+MG010A,MG (General  Medicine),Diarrohea–Chronic diarrohea,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)",Clinical notes  with planned  line of  treatment,6
+MG010B,MG (General  Medicine),Diarrohea–Persistent diarrohea,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)",Clinical notes  with planned  line of  treatment; stool  examintaion,5
+MG011A,MG (General  Medicine),Dysentery–Dysentery,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",5
+MG012A,MG (General  Medicine),Acute viral hepatitis–Acute viral  hepatitis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment, LFT,  summary, All  USG - Whole  Abdomen",5
+MG013A,MG (General  Medicine),Chronic Hepatitis–Chronic Hepatitis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment, LFT,  summary, All  USG - Whole  Abdomen",5
+MG014A,MG (General  Medicine),Liver abscess–Liver abscess,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",5
+MG015A,MG (General  Medicine),Visceral leishmaniasis–Visceral  leishmaniasis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",3
+MG016A,MG (General  Medicine),Pneumonia–Pneumonia,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",4
+MG017A,MG (General  Medicine),Severe pneumonia–Severe  pneumonia,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",1
+MG018A,MG (General  Medicine),Empyema–Empyema,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment,  CBC, X ray  chest",4
+MG019A,MG (General  Medicine),Lung abscess–Lung abscess,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment , X-  ray chest, CBC  and any other  investigations  done, planned  line of  management",2
+MG020A,MG (General  Medicine),Pericardial / Pleural  tuberculosis–Pericardial tuberculosis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings;  investigations  done",3
+MG020B,MG (General  Medicine),Pericardial / Pleural  tuberculosis–Pleural tuberculosis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings;  investigations  done",5
+MG021A,MG (General  Medicine),Urinary Tract Infection–Urinary Tract  Infection,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",1
+MG022A,MG (General  Medicine),Viral encephalitis–Viral encephalitis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",5
+MG023A,MG (General  Medicine),Septic Arthritis –Septic Arthritis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment,  CBC, X-ray of  the affected  joint",5
+MG024A,MG (General  Medicine),Skin and soft tissue infections –Skin  and soft tissue infections,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment, CBC  summary, All",4
+MG025A,MG (General  Medicine),Recurrent vomiting with  dehydration–Recurrent vomiting with  dehydration,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",6
+MG026A,MG (General  Medicine),Pyrexia of unknown origin–Pyrexia of  unknown origin,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",7
+MG027A,MG (General  Medicine),Bronchiectasis–Bronchiectasis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","X ray-Chest,  Clinical notes  with planned  line of  treatment",2
+MG028A,MG (General  Medicine),Acute bronchitis–Acute bronchitis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",2
+MG029A,MG (General  Medicine),Acute excaberation of COPD–Acute  excaberation of COPD,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",1
+MG030A,MG (General  Medicine),Acute excaberation of Interstitial Lung  Disease–Acute excaberation of  Interstitial Lung Disease,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",5
+MG031A,MG (General  Medicine),Endocarditis–Bacterial Endocarditis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment,  ECHO, CBC",4
+MG031B,MG (General  Medicine),Endocarditis–Fungal Endocarditis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment,  ECHO, CBC",2
+MG032A,MG (General  Medicine),Vasculitis–Vasculitis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",6
+MG033A,MG (General  Medicine),Pancreatitis–Acute pancreatitis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Cliical notes, Sr  Amylase,  Lipase, LFT,  CBC, USG-  abdomen",3
+MG033B,MG (General  Medicine),Pancreatitis–Chronic pancreatitis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Cliical notes, Sr  Amylase,  Lipase, LFT,  CBC, USG-  abdomen",1
+MG034A,MG (General  Medicine),Ascites–Ascites,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinial notes,  LFT, CBC,  USG- abdomen  Culture Report,",2
+MG035A,MG (General  Medicine),Acute transverse myelitis–Acute  transverse myelitis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",3
+MG036A,MG (General  Medicine),Atrial Fibrillation –Atrial Fibrillation,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment,  ECG, Sr  Electrolytes",3
+MG037A,MG (General  Medicine),Cardiac Tamponade –Cardiac  Tamponade,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clincal notes,  2D echo",7
+MG038A,MG (General  Medicine),Congestive heart failure–Congestive  heart failure,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",7
+MG039A,MG (General  Medicine),Asthma–Acute asthmatic attack,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",5
+MG039B,MG (General  Medicine),Asthma–Status asthmaticus,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",2
+MG040A,MG (General  Medicine),Respiratory failure–Type 1 respiratory  failure,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",3
+MG040B,MG (General  Medicine),Respiratory failure–Type 2 respiratory  failure,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",3
+MG040C,MG (General  Medicine),"Respiratory failure–Due to any cause  (pneumonia, asthma, COPD, ARDS,  foreign body, poisoning, head injury  etc.)","Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management,  Copy of MLC /  FIR (if required)",2
+MG041A,MG (General  Medicine),Upper GI bleeding–Upper GI bleeding  (conservative),"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",6
+MG041B,MG (General  Medicine),Upper GI bleeding–Upper GI bleeding  (endoscopic),"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",5
+MG042A,MG (General  Medicine),Lower GI hemorrhage–Lower GI  hemorrhage,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",2
+MG043A,MG (General  Medicine),Addison’s disease –Addison’s disease,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clincal notes,  Sr. Cortisol  levels, USG-  abdomen",2
+MG044A,MG (General  Medicine),Renal colic–Renal colic,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",6
+MG045A,MG (General  Medicine),AKI / Renal failure–AKI / Renal failure,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",2
+MG046A,MG (General  Medicine),Seizures–Seizures,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",5
+MG047A,MG (General  Medicine),Status epilepticus–Status epilepticus,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",1
+MG048A,MG (General  Medicine),Cerebrovascular  accident–Cerebrovascular accident,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",6
+MG049A,MG (General  Medicine),Cerebral sino-venous thrombosis /  Stroke–Cerebral sino-venous  thrombosis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",6
+MG049B,MG (General  Medicine),Cerebral sino-venous thrombosis /  Stroke–Acute stroke,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",6
+MG049C,MG (General  Medicine),Cerebral sino-venous thrombosis /  Stroke–Acute ischemic stroke,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",6
+MG049D,MG (General  Medicine),Cerebral sino-venous thrombosis /  Stroke–Acute heamorrhagic stroke,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",2
+MG050A,MG (General  Medicine),Immune mediated CNS  disorders–Immune mediated CNS  disorders,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",3
+MG051A,MG (General  Medicine),Hydrocephalus–Hydrocephalus,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",3
+MG052A,MG (General  Medicine),Myxedema coma –Myxedema coma,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment,  Throid profile,  USG- Thyroid  Gland",4
+MG053A,MG (General  Medicine),Thyrotoxic crisis –Thyrotoxic crisis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment,  Throid profile,  USG- Thyroid  Gland",2
+MG054A,MG (General  Medicine),Gout –Gout,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment,  Sr.Uric acid",2
+MG055A,MG (General  Medicine),Pneumothroax–Pneumothroax,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",5
+MG056A,MG (General  Medicine),Neuromuscular  disorders–Neuromuscular disorders,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",0
+MG057A,MG (General  Medicine),Hypoglycemia–Hypoglycemia,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clincal notes,  Blood sugar  level",0
+MG058A,MG (General  Medicine),Diabetic Foot–Diabetic Foot,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clincal profile,  Blood sugar  level,CBC,  Photograph of  the affected  foot",0
+MG059A,MG (General  Medicine),Diabetic ketoacidosis–Diabetic  ketoacidosis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",0
+MG060A,MG (General  Medicine),Electrolyte Imbalance–Hypercalcemia,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment,  Serum Calcium",0
+MG060B,MG (General  Medicine),Electrolyte Imbalance–Hypocalcemia,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment,  Serum Calcium",6
+MG060C,MG (General  Medicine),Electrolyte Imbalance–Hyponatremia,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment,  Serum  Electrolytes",6
+MG060D,MG (General  Medicine),Electrolyte Imbalance–Hypernatremia,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment,  Serum  Electrolytes",0
+MG061A,MG (General  Medicine),Hyperosmolar Non-Ketotic  coma–Hyperosmolar Non-Ketotic  coma,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",0
+MG062A,MG (General  Medicine),Accelerated  hypertension–Accelerated  hypertension,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",0
+MG063A,MG (General  Medicine),Hypertensive  emergencies–Hypertensive  emergencies,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",0
+MG064A,MG (General  Medicine),Severe anemia–Severe anemia,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",0
+MG065A,MG (General  Medicine),Sickle cell Anemia–Sickle cell Anemia,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",1
+MG066A,MG (General  Medicine),Anaphylaxis –Anaphylaxis,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  with planned  line of  treatment, CBC  summary, All",0
+MG067A,MG (General  Medicine),Heat stroke–Heat stroke,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  leading to this  hospitalization  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",0
+MG068A,MG (General  Medicine),Systematic lupus  erythematosus–Systematic lupus  erythematosus,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",0
+MG069A,MG (General  Medicine),Guillian Barre Syndrome–Guillian  Barre Syndrome,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)",Clinical notes  and Admission  notes detailed  the need for  High end  histopathology  (Biopsies) and  advanced  serology  investigations,1
+MG070A,MG (General  Medicine),Snake bite–Snake bite,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  neurological  examination  findings; any  investigations  done; planned  line of  management",1
+MG071A,MG (General  Medicine),Poisoning–Acute organophosphorus  poisoning,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  neurological  examination  findings; any  investigations  done; planned  line of  management,  Copy of MLC /  FIR",1
+MG071B,MG (General  Medicine),Poisoning–Other poisonings,"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1800)/ HDU 
+(Rs (Rs 2700)/ 
+ICU (without 
+ventilator) (Rs 
+3600)/ ICU 
+(with 
+ventilator)(Rs 
+4500)","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  neurological  examination  findings; any  investigations  done; planned  line of  management,  Copy of MLC /  FIR",0
+MG072A,MG (General  Medicine),Haemodialysis / Peritoneal  Dialysis–Haemodialysis Dialysis,"1,500","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",0
+MG072B,MG (General  Medicine),Haemodialysis / Peritoneal  Dialysis–Peritoneal Dialysis,"1,500","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",0
+MG073A,MG (General  Medicine),Plasmapheresis–Plasmapheresis,"2,000","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",3
+MG074A,MG (General  Medicine),Blood transfusion–Whole Blood  transfusion,"2,000","Clinical notes  with planned  line of  treatment,  Complete  Hemogram,  Blood Group,  Planned line of  treatment",5
+MG074B,MG (General  Medicine),"Blood transfusion–Blood component  including platelet transfusion (RDP,  PC, SDP)","2,000","Clinical notes  with planned  line of  treatment,  Complete  Hemogram,  Blood Group,  Planned line of  treatment",5
+MG075A,MG (General  Medicine),"High end radiological diagnostic  (CT, MRI, Imaging including nuclear  imaging)–High end radiological  diagnostic  (CT, MRI, Imaging including nuclear  imaging) (Only for ABPMJAY)","5,000","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",3
+MG076A,MG (General  Medicine),High end histopathology (Biopsies)  and advanced serology  investigations–High end  histopathology (Biopsies) and  advanced serology investigations,"5,000","Clinical notes  detailing history  Treatment details,  and Admission  notes showing  vitals and  examination  findings; any  investigations  done; planned  line of  management",5
+MG077A,MG (General  Medicine),Unspecified Medical,"to be 0 
+negotiated",Clinical Notes,
+MM001A,MM (Mental Disorder  Packages),Mental Retardation–Mental  Retardation (Reserved for Public  Hospital Only),"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1500)/ HDU 
+(Rs (Rs 2500)",Detailed history  Detailed treatment  with chronicity;  need for  hospitalization.  Admission  under  empanneled  Psychiatrist is a    must.,3
+MM002A,MM (Mental Disorder  Packages),"Mental disorders - Organic, including  symptomatic–Mental disorders -  Organic, including symptomatic  (Reserved for Public Hospital Only)","Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1500)/ HDU 
+(Rs (Rs 2500)",Detailed history  Detailed treatment  with chronicity;  need for  hospitalization.  Admission  under  empanneled  Psychiatrist is a    must.,5
+MM003A,MM (Mental Disorder  Packages),"Schizophrenia, schizotypal and  delusional disorders–Schizophrenia,  schizotypal and delusional disorders  (Reserved for Public Hospital Only)","Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1500)/ HDU 
+(Rs (Rs 2500)",Detailed history  Detailed treatment  with chronicity;  need for  hospitalization.  Admission  under  empanneled  Psychiatrist is a    must.,5
+MM004A,MM (Mental Disorder  Packages),"Neurotic, stress-related and  somatoform disorders–Neurotic,  stress-related and somatoform  disorders (Reserved for Public  Hospital Only)","Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1500)/ HDU 
+(Rs (Rs 2500)",Detailed history  Detailed treatment  with chronicity;  need for  hospitalization.  Admission  under  empanneled  Psychiatrist is a    must.,5
+MM005A,MM (Mental Disorder  Packages),Mood (affective) disorders–Mood  (affective) disorders (Reserved for  Public Hospital Only),"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1500)/ HDU 
+(Rs (Rs 2500)",Detailed history  Detailed treatment  with chronicity;  need for  hospitalization.  Admission  under  empanneled  Psychiatrist is a    must.,3
+MM006A,MM (Mental Disorder  Packages),Behavioural syndromes associated  with physiological disturbances and  physical factors–Behavioural  syndromes associated with  physiological disturbances and  physical factors (Reserved for Public  Hospital Only),"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1500)/ HDU 
+(Rs (Rs 2500)",Detailed history  Detailed treatment  with chronicity;  need for  hospitalization.  Admission  under  empanneled  Psychiatrist is a    must.,5
+MM007A,MM (Mental Disorder  Packages),Mental and Behavioural disorders due  to psychoactive substance use– Mental and Behavioural disorders  due to psychoactive substance use  (Reserved for Public Hospital  Only),"Package 
+Amount per 
+day (drop 
+down) for 
+admission 
+type: Routine 
+ward (Rs 
+1500)/ HDU 
+(Rs (Rs 2500)",Detailed history  Detailed treatment  of psychoactive  notes; all  substanec with  chronicity; need  detailed discharge  for  hospitalization.  Admission  under  empanneled  Psychiatrist is a  must.,5
+MM008A,MM (Mental Disorder  Packages),"Pre - Electro Convulsive Therapy  (ECT) and Pre - Transcranial  Magnetic Stimulation (TMS) Package  (Cognitive Tests, Complete  Haemogram, Liver Function Test,  Renal Function Test, Serum  Electrolytes, Electro Cardiogram  (ECG), CT / MRI Brain,  Electroencephalogram, Thyroid  Function Test, VDRL, HIV Test,  Vitamin B12 levels, Folate levels,  Lipid Profile, Homocysteine levels)– Pre - Electro Convulsive  Therapy (ECT) and Pre - Transcranial  Magnetic Stimulation (TMS) Package  (Cognitive Tests, Complete  Haemogram, Liver Function Test,  Renal Function Test, Serum  Electrolytes, Electro Cardiogram  (ECG), CT / MRI Brain,  Electroencephalogram, Thyroid  Function Test, VDRL, HIV Test,  Vitamin B12 levels, Folate levels,  Lipid Profile, Homocysteine levels)  (Reserved for Public Hospital Only)","10,000",Detailed history  Detailed treatment  with chronicity;  need for  specific  treatment and  expected  results.  Admission  under  empanneled  Psychiatrist is a  must.,5
+MM009A,MM (Mental Disorder  Packages),Electro Convulsive Therapy (ECT) -  per session–Electro Convulsive  Therapy (ECT) - per session  (Reserved for Public Hospital Only),"3,000",Detailed history  Detailed treatment  with chronicity;  need for  specific  treatment and  expected  results.  Admission  under  empanneled  Psychiatrist is a  must.,5
+MM010A,MM (Mental Disorder  Packages),Transcranial Magnetic Stimulation  (TMS) - per session–Transcranial  Magnetic Stimulation (TMS) - per  session (Reserved for Public  Hospital Only),"1,000",Detailed history  Detailed treatment  with chronicity;  need for  specific  treatment and  expected  results.  Admission  under  empanneled  Psychiatrist is a  must.,5
+MN001A,MN (Neo-Natal Care  Packages),Basic neonatal care package: Babies  that can be managed by side of  mother in postnatal ward without  requiring admission in SNCU/NICU:  • Any newborn needing feeding  support  • Babies requiring closer monitoring or  short-term care for conditions like:  o Birth asphyxia (need for positive  pressure ventilation; no HIE)  o Moderate jaundice requiring  phototherapy  o Large for dates (>97 percentile)  Babies  o Small for gestational age (less than  3rd centile)  –Basic neonatal care  package: Babies that can be  managed by side of mother in  postnatal ward without requiring  admission in SNCU/NICU:  • Any newborn needing feeding  support  • Babies requiring closer monitoring or  short-term care for conditions like:  o Birth asphyxia (need for positive  pressure ventilation; no HIE)  o Moderate jaundice requiring  phototherapy  o Large for dates (>97 percentile)  Babies  o Small for gestational age (less than  3rd centile),500,"Detailed clinical  notes (incl  trigger for  hospitalization  and  examiantion  findings),  supporting  investigations.  Admission  under  neonatologist in  NICU (in major  locations) and  under  Pediatrician in  smaller  locations is a  must.",5
+MN002A,MN (Neo-Natal Care  Packages),"Special Neonatal Care Package:  Babies that required admission to  SNCU or NICU:  Babies admitted for short term care  for conditions like:  • Mild Respiratory Distress/tachypnea  • Mild encephalopathy  • Severe jaundice requiring intensive  phototherapy  • Haemorrhagic disease of newborn  • Unwell baby requiring monitoring  • Some dehydration  • Hypoglycaemia  Mother's stay and food in the hospital  for breastfeeding, family centred care  and (Kangaroo Mother Care) KMC is  mandatory and included in the  package rate  –Special Neonatal Care Package:  Babies that required admission to  SNCU or NICU:  Babies admitted for short term care  for conditions like:  • Mild Respiratory Distress/tachypnea  • Mild encephalopathy  • Severe jaundice requiring intensive  phototherapy  • Haemorrhagic disease of newborn  • Unwell baby requiring monitoring  • Some dehydration  • Hypoglycaemia  Mother's stay and food in the hospital","3,000","Clinical notes  with planned  line of  treatment (incl  birth & past  history),  Investigation  Reports  supporting  diagnosis,  Planned line of  treatment",5
+MN003A,MN (Neo-Natal Care  Packages),"Intensive Neonatal Care Package  Babies with birthweight 1500-1799 g  or  Babies of any birthweight and at least  one of the following conditions:  • Need for mechanical ventilation for  less than 24 hours or non-invasive  respiratory support (CPAP, HFFNC)  • Sepsis / pneumonia without  complications  • Hyperbilirubinemia requiring  exchange transfusion  • Seizures  • Major congenital malformations (pre-  surgical stabilization, not requiring  ventilation)  • Cholestasis significant enough  requiring work up and in-hospital  management  • Congestive heart failure or shock  Mother's stay and food in the hospital  for breastfeeding, family centred care  and (Kangaroo Mother Care) KMC is  mandatory and included in the  package rate  –Intensive Neonatal Care Package  Babies with birthweight 1500-1799 g  or  Babies of any birthweight and at least  one of the following conditions:  • Need for mechanical ventilation for  less than 24 hours or non-invasive","5,000","Detailed clinical  notes (incl  trigger for  hospitalization  and  examiantion  findings),  supporting  investigations.  Admission  under  neonatologist in  NICU (in major  locations) and  under  Pediatrician in  smaller  locations is a  must.",5
+MN004A,MN (Neo-Natal Care  Packages),"Advanced Neonatal Care Package:  Babies with birthweight of 1200-1499  g  or  Babies of any birthweight with at least  one of the following conditions:  • Any condition requiring invasive  ventilation longer than 24 hours  • Hypoxic Ischemic encephalopathy  requiring Therapeutic Hypothermia  • Cardiac rhythm disorders needing  intervention (the cost of cardiac  surgery or implant will be covered  under cardiac surgery packages)  • Sepsis with complications such as  meningitis or bone and joint infection,  DIC or shock  • Renal failure requiring dialysis  • Inborn errors of metabolism  Mother's stay and food in the hospital  for breastfeeding, family centred care  and (Kangaroo Mother Care) KMC is  mandatory and included in the  package rate  –Advanced Neonatal Care  Package:  Babies with birthweight of 1200-1499  g  or  Babies of any birthweight with at least  one of the following conditions:  • Any condition requiring invasive  ventilation longer than 24 hours","6,000","Detailed clinical  notes (incl  trigger for  hospitalization  and  examiantion  findings),  supporting  investigations.  Admission  under  neonatologist in  NICU (in major  locations) and  under  Pediatrician in  smaller  locations is a  must.",5
+MN005A,MN (Neo-Natal Care  Packages),"Critical Care Neonatal Package:  Babies with birthweight of <1200 g  or  Babies of any birthweight with at least  one of the following conditions:  • Severe Respiratory Failure requiring  High Frequency Ventilation or inhaled  Nitric Oxide (iNO)  • Multisystem failure requiring multiple  organ support including mechanical  ventilation and multiple inotropes  • Critical congenital heart disease  Mother's stay and food in the hospital  for breastfeeding, family centred care  and (Kangaroo Mother Care) KMC is  mandatory and included in the  package rate  –Critical Care Neonatal Package:  Babies with birthweight of <1200 g  or  Babies of any birthweight with at least  one of the following conditions:  • Severe Respiratory Failure requiring  High Frequency Ventilation or inhaled  Nitric Oxide (iNO)  • Multisystem failure requiring multiple  organ support including mechanical  ventilation and multiple inotropes  • Critical congenital heart disease  Mother's stay and food in the hospital  for breastfeeding, family centred care  and (Kangaroo Mother Care) KMC is","7,000","Detailed clinical  notes (incl  trigger for  hospitalization  and  examiantion  findings),  supporting  investigations.  Admission  under  neonatologist in  NICU (in major  locations) and  under  Pediatrician in  smaller  locations is a  must.",5
+MN006A,MN (Neo-Natal Care  Packages),"Chronic Care Package: If the baby  requires stay beyond the upper limit of  usual stay in Package no MN004A or  MN005A for conditions like severe  BPD requiring respiratory support,  severe NEC requiring prolonged TPN  support–Chronic Care Package: If the  baby requires stay beyond the upper  limit of usual stay in Package no  MN004A or MN005A for conditions  like severe BPD requiring respiratory  support, severe NEC requiring  prolonged TPN support","3,000",Claim number  of having  utilized  Package no  MN004A or  MN005A and  Notes  mentioning  need for stay  beyond  prescribed  upper limit,3
+MN007A,MN (Neo-Natal Care  Packages),High Risk Newborn Post Discharge  Care Package (Protocol Driven)–High  Risk Newborn Post Discharge Care  Package  (Protocol Driven),"2,400",Need of  planned care  and details of  planned post  discharge care,3
+MN008A,MN (Neo-Natal Care  Packages),Laser Therapy for Retinopathy of  Prematurity (Irrespective of no. of  eyes affected) - per session–Laser  Therapy for Retinopathy of  Prematurity  (Irrespective of no. of eyes affected) -  per session,"1,500",Clinical notes  and  Fundoscope  reports / stills  showing extent  of ROP and  need for  procedure.,5
+MN009A,MN (Neo-Natal Care  Packages),Advanced Surgery for Retinopathy of  Prematurity–Advanced Surgery for  Retinopathy of Prematurity,"15,000",Clinical notes  and  Fundoscope  reports / stills  showing extent  of ROP and  need for  surgery.,0
+MN010A,MN (Neo-Natal Care  Packages),Ventriculoperitoneal Shunt Surgery  (VP) or Omaya Reservoir or External  Drainage for Hydrocephalus– Ventriculoperitoneal Shunt Surgery  (VP) or Omaya Reservoir or External  Drainage for Hydrocephalus,"5,000",Clinical history  and CT/ MRI;  pre-op clinical  photograph,7
+MO001A,MO (Medical  Oncology),CT for CA Breast–Cyclophosphamide  + Epirubcin,"7,200","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology  report of  Modified radical  mastectomy or  breast  conservation  surgery,ECG,  2D-ECHO, USG  abdomen and  pelvis, CXR PA  view or CECT  chest+abdomen  and pelvis in  case of  metastatic  disease",5
+MO001B,MO (Medical  Oncology),CT for CA Breast–Weekly Paclitaxel  for Adjuvant Therapy,"5,800","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology report  of Modified  radical  mastectomy or  breast  conservation  surgery, USG  abdomen and  pelvis, CXR PA  view or CECT  chest+abdomen  and pelvis in  case of  metastatic  disease",6
+MO001C,MO (Medical  Oncology),CT for CA Breast–Weekly Paclitaxel  in metastatic setting,"5,800","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology report  of Modified  radical  mastectomy or  breast  conservation  surgery, USG  abdomen and  pelvis, CXR PA  view or CECT  chest+abdomen  and pelvis in  case of  metastatic  disease",6
+MO001D,MO (Medical  Oncology),CT for CA Breast–Cyclophosphamide  + Methotrexate + 5 - FU,"3,200","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology report  of Modified  radical  mastectomy or  breast  conservation  surgery, USG  abdomen and  pelvis, CXR PA  view or CECT  chest+abdomen  and pelvis in  case of  metastatic  disease",6
+MO001E,MO (Medical  Oncology),CT for CA Breast–Docetaxel +  Cyclophosphamide,"19,800","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology report  of Modified  radical  mastectomy or  breast  conservation  surgery, USG  abdomen and  pelvis, CXR PA  view or CECT  chest+abdomen  and pelvis in  case of  metastatic  disease",5
+MO001F,MO (Medical  Oncology),CT for CA Breast–Trastuzumab,"21,200","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology report  of Modified  radical  mastectomy or  breast  conservation  surgery,  Her-2  neu IHC - 3+ or  Her 2-neu  positive  FISH,ECG,2D-  ECHO,USG  abdomen and  pelvis, CXR PA  view or CECT  chest+abdomen  and pelvis in  case of  metastatic  disease",0
+MO001G,MO (Medical  Oncology),CT for CA Breast–Tamoxifen,"1,200","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology report  of Modified  radical  mastectomy or  breast  conservation  surgery,  ER or  PR positive ,  mammography,  USG abdomen  and pelvis, CXR  PA view or  CECT  chest+abdomen  and pelvis in  case of  metastatic  disease",0
+MO001H,MO (Medical  Oncology),CT for CA Breast–Letrozole,"3,900","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology report  of Modified  radical  mastectomy or  breast  conservation  surgery,  ER or  PR positive ,  mammography,  USG abdomen  and pelvis, CXR  PA view or  CECT  chest+abdomen  and pelvis in  case of  metastatic  disease",0
+MO001I,MO (Medical  Oncology),CT for CA Breast–Carboplatin +  Paclitaxel,"14,900","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology report  of Modified  radical  mastectomy or  breast  conservation  surgery, ,  mammography,  USG abdomen  and pelvis, CXR  PA view or  CECThest+abd  omen and  pelvis in case of  metastatic  disease",0
+MO001J,MO (Medical  Oncology),CT for CA Breast–Capecitabine,"7,400","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology report  of Modified  radical  mastectomy or  breast  conservation  surgery, ,  mammography,  USG abdomen  and pelvis, CXR  PA view or  CECT  chest+abdomen  and pelvis in  case of  metastatic  disease",0
+MO001K,MO (Medical  Oncology),CT for CA Breast–Carboplatin +  Gemcitabine,"13,900","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology report  of Modified  radical  mastectomy or  breast  conservation  surgery, ,  mammography,  USG abdomen  and pelvis, CXR  PA view or  CECT  chest+abdomen  and pelvis in  case of  metastatic  disease",0
+MO001L,MO (Medical  Oncology),CT for CA Breast–Cyclophosphamide  + Adriamycin,"4,500","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology  report of  Modified radical  mastectomy or  breast  conservation  surgery,ECG,  2D-ECHO, USG  abdomen and  pelvis, CXR PA  view or CECT  chest+abdomen  and pelvis in  case of  metastatic  disease",5
+MO001M,MO (Medical  Oncology),CT for CA Breast–Fulvestrant,"11,000","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology report  of Modified  radical  mastectomy or  breast  conservation  surgery,  ER or  PR positive ,  mammography,  USG abdomen  and pelvis, CXR  PA view or  CECT chest  abdomen and  pelvis",0
+MO001N,MO (Medical  Oncology),CT for CA Breast–Paclitaxel,"11,800","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology report  of Modified  radical  mastectomy or  breast  conservation  surgery, ,  mammography,  USG abdomen  and pelvis, CXR  PA view or  CECT chest  abdomen and  pelvis",5
+MO001O,MO (Medical  Oncology),CT for CA Breast–Exemestane,"10,400","CBC, LFT,RFT,  BAR CODE OF  Biopsy report or  THE DRUGS,  surgical  pathology report  of Modified  radical  mastectomy or  breast  conservation  surgery,  ER or  PR positive ,  mammography,  USG abdomen  and pelvis, CXR  PA view or  CECT chest  abdomen and  pelvis",0
+MO002A,MO (Medical  Oncology),CT for Metastatic bone malignancy  and multiple myeloma–Zoledronic  Acid,"4,500","RFT, skeletal  survey/bone  scan/PET-CT  showing bone  metastasis  histopathology  showing  myeloma, lung  cancer,Breast  cancer, renal  cancer or other  cancer",5
+MO003A,MO (Medical  Oncology),CT for CA Ovary–Cisplatin +  Irinotecan,"10,200","CBc, LFT, RFT,  RBS, CA-125,  CECT Thorax,  abdomen and  Pelvis, HPR or  cytology  suggestive of  ovarian  adenocarcinom  a",0
+MO003B,MO (Medical  Oncology),CT for CA Ovary–Lipodox +  Carboplatin,"17,200","CBc, LFT, RFT,  RBS, CA-125,  CECT Thorax,  abdomen and  Pelvis, HPR or  cytology  suggestive of  ovarian  adenocarcinom  a",7
+MO003C,MO (Medical  Oncology),CT for CA Ovary–Etoposide,"3,400","CBc, LFT, RFT,  RBS, CA-125,  CECT Thorax,  abdomen and  Pelvis, HPR or  cytology  suggestive of  ovarian  adenocarcinom  a",1
+MO003D,MO (Medical  Oncology),CT for CA Ovary–Irinotecan,"8,400","CBc, LFT, RFT,  RBS, CA-125,  CECT Thorax,  abdomen and  Pelvis, HPR or  cytology  suggestive of  ovarian  adenocarcinom  a",0
+MO003E,MO (Medical  Oncology),CT for CA Ovary–Lipodox,"14,800","CBc, LFT, RFT,  RBS, CA-125,  CECT Thorax,  abdomen and  Pelvis, HPR or  cytology  suggestive of  ovarian  adenocarcinom  a",0
+MO003F,MO (Medical  Oncology),CT for CA Ovary–Carboplatin +  Gemcitabine,"13,900","CBc, LFT, RFT,  RBS, CA-125,  CECT Thorax,  abdomen and  Pelvis, HPR or  cytology  suggestive of  ovarian  adenocarcinom  a",0
+MO003G,MO (Medical  Oncology),CT for CA Ovary–Carboplatin +  Paclitaxel,"14,700","CBc, LFT, RFT,  RBS, CA-125,  CECT Thorax,  abdomen and  Pelvis, HPR or  cytology  suggestive of  ovarian  adenocarcinom  a",0
+MO004A,MO (Medical  Oncology),CT for Germ Cell Tumor–Carboplatin  (AUC 7),"5,800","CBC, LFT,  RFT, RBS,  Beta- HCG,  AFP,  LDH,CECT  Thorax,  abdomen and  Pelvis, ECG,  Histopathology - BIOCHEMISTRY,E  testicular  seminoma",0
+MO004B,MO (Medical  Oncology),CT for Germ Cell Tumor–Bleomycin +  Etoposide + Cisplatin,"11,600","CBC, LFT,  RFT, RBS,  Beta-HCG,  AFP,  LDH,CECT  Thorax,  abdomen and  Pelvis,  ECG,PFT  DLCo,  Histopathology - SUMMARY OF  Ovarian,  testicular,  mediastinal",0

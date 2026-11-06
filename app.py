@@ -1,8 +1,8 @@
-
 import streamlit as st
 import pandas as pd
 import time
-import requests
+import re
+from sentence_transformers import SentenceTransformer, util
 
 # --- PAGE CONFIG ---
 st.set_page_config(
@@ -11,6 +11,59 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+# --- LOAD DATASET ---
+SPECIALITY_MAP = {
+    "BM": "Burns & Plastic Surgery",
+    "ER": "Emergency",
+    "IN": "Interventional Neuroradiology",
+    "MC": "Medical Cardiology",
+    "MG": "General Medicine",
+    "MM": "Mental Health",
+    "MN": "Neonatology",
+    "MO": "Medical Oncology",
+}
+
+@st.cache_data
+def load_dataset():
+    df = pd.read_csv("data/ayushman_packages.csv")
+    # Derive speciality from the 2-letter prefix of package_id
+    df["speciality"] = df["package_id"].str[:2].map(SPECIALITY_MAP).fillna("Other")
+    return df
+
+df = load_dataset()
+
+# --- RULE ENGINE FUNCTIONS ---
+def extract_tbsa(text):
+    match = re.search(r'(\d+)\s*%', text)
+    if match:
+        return int(match.group(1))
+    return None
+
+def apply_burn_rules(input_text, predicted_package):
+    tbsa = extract_tbsa(input_text)
+    if tbsa is None:
+        return predicted_package
+        
+    if tbsa <= 40:
+        return "BM001B"
+    elif 40 < tbsa <= 60:
+        return "BM001C"
+    elif tbsa > 60:
+        return "BM001D"
+        
+    return predicted_package
+
+# --- LOAD MODEL ---
+@st.cache_resource
+def load_model():
+    return SentenceTransformer("all-MiniLM-L6-v2")
+
+model = load_model()
+
+# Precompute embeddings
+package_descriptions = df["package_description"].astype(str).tolist()
+package_embeddings = model.encode(package_descriptions)
 
 # --- THEME CONSTANTS ---
 PRIMARY_COLOR = "#2563EB"
@@ -22,145 +75,16 @@ ACCENT_COLOR = "#22C55E"
 # --- CUSTOM CSS ---
 st.markdown(f"""
 <style>
-    /* Global Text & Background */
-    [data-testid="stAppViewContainer"] {{
-        background-color: {BG_COLOR};
-        color: {TEXT_COLOR};
-    }}
-    [data-testid="stSidebar"] {{
-        background-color: {SEC_BG_COLOR};
-        border-right: 1px solid #334155;
-    }}
-    
-    /* Typography */
-    h1, h2, h3, h4, h5, h6, p, label {{
-        font-family: 'Inter', sans-serif !important;
-        color: {TEXT_COLOR} !important;
-    }}
-    .stMarkdown p {{
-        color: #CBD5F1 !important;
-    }}
-
-    /* Widget Visibility Fixes (Dark Mode) */
-    .stFileUploader label {{
-        color: {TEXT_COLOR} !important;
-        font-weight: 600;
-    }}
-    [data-testid="stFileUploader"] {{
-        background-color: {SEC_BG_COLOR};
-        padding: 1rem;
-        border-radius: 8px;
-        border: 1px dashed #475569;
-    }}
-    [data-testid="stFileUploader"] small {{
-        color: #94A3B8 !important; /* Muted text for drag/drop instructions */
-    }}
-    
-    .stSelectbox label, .stToggle label {{
-        color: {TEXT_COLOR} !important;
-    }}
-    
-    /* Expanders */
-    .streamlit-expanderHeader {{
-        background-color: {SEC_BG_COLOR} !important;
-        color: {TEXT_COLOR} !important;
-        border-radius: 8px;
-    }}
-    [data-testid="stExpanderDetails"] {{
-        background-color: {BG_COLOR};
-        border-color: {SEC_BG_COLOR};
-    }}
-
-    /* Header Component */
-    .header-container {{
-        background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-        padding: 2rem;
-        border-radius: 12px;
-        color: white;
-        margin-bottom: 2rem;
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-        border: 1px solid #1e40af;
-    }}
-    .header-title {{
-        font-size: 2.2rem;
-        font-weight: 800;
-        margin: 0;
-        letter-spacing: -0.025em;
-    }}
-    .header-subtitle {{
-        font-size: 1.1rem;
-        color: #bfdbfe;
-        margin-top: 0.5rem;
-    }}
-
-    /* Card Component */
-    .css-card {{
-        background-color: {SEC_BG_COLOR};
-        border-radius: 12px;
-        padding: 1.5rem;
-        border: 1px solid #334155;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
-        margin-bottom: 1.5rem;
-    }}
-    .css-card h3 {{
-        margin-top: 0;
-        font-size: 1.25rem;
-    }}
-
-    /* Status Badges */
-    .status-box {{
-        padding: 1.25rem;
-        border-radius: 8px;
-        text-align: center;
-        margin-bottom: 1rem;
-        font-weight: 600;
-        border: 1px solid transparent;
-    }}
-    .status-clean {{
-        background-color: rgba(34, 197, 94, 0.15);
-        color: #4ade80 !important;
-        border-color: rgba(34, 197, 94, 0.3);
-    }}
-    .status-clean h2 {{ color: #4ade80 !important; }}
-    
-    .status-partial {{
-        background-color: rgba(234, 179, 8, 0.15);
-        color: #facc15 !important;
-        border-color: rgba(234, 179, 8, 0.3);
-    }}
-    .status-partial h2 {{ color: #facc15 !important; }}
-
-    .status-review {{
-        background-color: rgba(239, 68, 68, 0.15);
-        color: #f87171 !important;
-        border-color: rgba(239, 68, 68, 0.3);
-    }}
-    .status-review h2 {{ color: #f87171 !important; }}
-
-    /* Buttons */
-    .stButton>button {{
-        width: 100%;
-        background-color: {PRIMARY_COLOR};
-        color: white !important;
-        height: 3rem;
-        font-size: 1.1rem;
-        border-radius: 8px;
-        border: none;
-        font-weight: 600;
-    }}
-    .stButton>button:hover {{
-        background-color: #3b82f6;
-        box-shadow: 0 0 15px rgba(37, 99, 235, 0.4);
-    }}
-    
-    /* Metrics */
-    [data-testid="stMetricValue"] {{
-        color: #F8FAFC !important;
-        font-size: 1.8rem !important;
-    }}
-    [data-testid="stMetricLabel"] {{
-        color: #94a3b8 !important;
-    }}
+[data-testid="stAppViewContainer"] {{
+    background-color: {BG_COLOR};
+    color: {TEXT_COLOR};
+}}
+[data-testid="stSidebar"] {{
+    background-color: {SEC_BG_COLOR};
+}}
+h1,h2,h3,h4,p,label {{
+    color:{TEXT_COLOR}!important;
+}}
 </style>
 """, unsafe_allow_html=True)
 
@@ -169,174 +93,186 @@ with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/4006/4006511.png", width=70)
     st.markdown("## Ayushma\n**AI Pre-Audit Assistant**")
     st.markdown("---")
-    st.markdown("### 🛠 Tools")
-    st.selectbox("Model Version", ["Ayushma-v1.0 (Rule Engine)", "Ayushma-v2.0 (LLM - Coming Soon)"])
+    st.selectbox("Model Version", ["Ayushma-v1.0 (AI Similarity Engine)"])
     st.toggle("Advanced Debug Mode", value=False)
-    
     st.markdown("---")
-    st.markdown("### 📊 Stats")
-    st.caption("Claims Processed Today: **12**")
-    st.caption("Success Rate: **85%**")
-    
-    st.markdown("---")
-    st.success("✅ System Operational")
+    st.success("System Operational")
 
-# --- MAIN LAYOUT ---
-
-# Header
+# --- HEADER ---
 st.markdown("""
-<div class="header-container">
-    <div class="header-title">Ayushma Audit</div>
-    <div class="header-subtitle">Intelligent PM-JAY Claim Verification & Pre-Submission Analysis</div>
+<div style="background:linear-gradient(135deg,#1e3a8a,#2563eb);
+padding:2rem;border-radius:12px;color:white;margin-bottom:2rem;">
+<h2>Ayushma Audit</h2>
+<p>Intelligent PM-JAY Claim Verification</p>
 </div>
 """, unsafe_allow_html=True)
 
-# Two-column Layout
-col_input, col_output = st.columns([1, 1.2], gap="large")
+# --- LAYOUT ---
+col_input, col_output = st.columns([1,1.2])
+
+# ================= INPUT PANEL =================
 
 with col_input:
-    st.subheader("📤 Document Upload")
-    st.markdown("Please provide the required proofs for claim substantiation.")
-    st.markdown("<br>", unsafe_allow_html=True)
 
-    # Grouping inputs
-    with st.expander("📝 1. Clinical Documents (Required)", expanded=True):
-        clinical_notes = st.file_uploader("Clinical Notes", type=["txt", "pdf", "png", "jpg", "jpeg"], key="notes")
-        discharge_summary = st.file_uploader("Discharge Summary", type=["txt", "pdf", "png", "jpg", "jpeg"], key="disch")
+    st.subheader("📤 Claim Information")
 
-    with st.expander("📸 2. Support Evidence (Required)", expanded=True):
-        photos = st.file_uploader("Treatment Photographs", type=["png", "jpg", "jpeg", "pdf"], key="photos")
-        hospital_bill = st.file_uploader("Hospital Bill", type=["txt", "pdf", "png", "jpg", "jpeg"], key="bill")
-    
-    # Calculate status
-    files_status = {
-        "Clinical Notes": clinical_notes is not None,
-        "Discharge Summary": discharge_summary is not None,
-        "Treatment Photographs": photos is not None,
-        "Hospital Bill": hospital_bill is not None
-    }
-    missing_docs = [k for k, v in files_status.items() if not v]
-    missing_count = len(missing_docs)
-    
-    # Run Button
-    st.markdown("<br>", unsafe_allow_html=True)
-    btn_text = f"🚀 Run Pre-Audit ({4-missing_count}/4 Ready)"
-    run_btn = st.button(btn_text, type="primary", use_container_width=True)
+    clinical_notes = st.text_area(
+        "Clinical Notes",
+        height=150
+    )
 
+    discharge_summary = st.text_area(
+        "Discharge Summary",
+        height=150
+    )
+
+    treatment_photos = st.text_area(
+        "Treatment Photograph Description",
+        height=100
+    )
+
+    hospital_bill = st.text_area(
+        "Hospital Bill Summary",
+        height=120
+    )
+
+    generate = st.button("Generate Pre-Audit", use_container_width=True)
+
+# ================= OUTPUT PANEL =================
 
 with col_output:
-    if run_btn:
-        with st.spinner("🤖 Ayushma is analyzing claim data..."):
+
+    if generate:
+
+        with st.spinner("Analyzing claim with AI..."):
+
+            # Combine input text
+            input_text = f"""
+            Clinical Notes: {clinical_notes}
+            Discharge Summary: {discharge_summary}
+            Treatment Photos: {treatment_photos}
+            Hospital Bill: {hospital_bill}
+            """
+
+            # Encode user input
+            query_embedding = model.encode(input_text)
+
+            # Calculate similarity
+            scores = util.cos_sim(query_embedding, package_embeddings)
+            best_index = scores.argmax().item()
+            confidence = float(scores[0][best_index])
+            best_package = df.iloc[best_index]
+            predicted_package = best_package["package_id"]
+
+            # --- APPLY RULE ENGINE ---
+            predicted_package = apply_burn_rules(input_text, predicted_package)
+
+            # Reload correct package details after rule correction
+            package_row = df[df["package_id"] == predicted_package].iloc[0]
+
+            approved_amount = package_row["package_amount"]
+            speciality = package_row["speciality"]
+            description = package_row["package_description"]
+
+            # --- AUDIT DECISION ENGINE ---
+            has_clinical_notes = bool(clinical_notes.strip())
+            has_discharge_summary = bool(discharge_summary.strip())
+            has_treatment_photos = bool(treatment_photos.strip())
+            has_hospital_bill = bool(hospital_bill.strip())
+
+            disapproval_reasons = []
+            flag_reasons = []
+
+            # Confidence thresholds
+            if confidence < 0.30:
+                disapproval_reasons.append(f"Claim description does not match any PM-JAY package (confidence: {confidence:.0%})")
+            elif confidence < 0.45:
+                flag_reasons.append(f"Low match confidence with PM-JAY packages ({confidence:.0%}) — manual review required")
+
+            # Document checks
+            if not has_clinical_notes and not has_discharge_summary:
+                disapproval_reasons.append("Both Clinical Notes and Discharge Summary are missing — mandatory documents")
+            else:
+                if not has_clinical_notes:
+                    flag_reasons.append("Clinical Notes are missing")
+                if not has_discharge_summary:
+                    flag_reasons.append("Discharge Summary is missing")
+                if not has_treatment_photos:
+                    flag_reasons.append("Treatment Photograph description is missing")
+                if not has_hospital_bill:
+                    flag_reasons.append("Hospital Bill Summary is missing")
+
+            # Determine final verdict
+            if disapproval_reasons:
+                audit_verdict = "DISAPPROVED"
+            elif flag_reasons:
+                audit_verdict = "FLAGGED"
+            else:
+                audit_verdict = "APPROVED"
+
+        # --- DISPLAY VERDICT ---
+        if audit_verdict == "APPROVED":
+            st.markdown("""
+            <div style="background:linear-gradient(135deg,#14532d,#16a34a);
+            padding:1.2rem 1.5rem;border-radius:10px;color:white;margin-bottom:1rem;">
+            <h3 style="margin:0;color:white!important;">✅ CLAIM APPROVED</h3>
+            <p style="margin:0.3rem 0 0;color:#bbf7d0!important;">Claim is valid under PM-JAY package</p>
+            </div>""", unsafe_allow_html=True)
+        elif audit_verdict == "FLAGGED":
+            st.markdown("""
+            <div style="background:linear-gradient(135deg,#713f12,#d97706);
+            padding:1.2rem 1.5rem;border-radius:10px;color:white;margin-bottom:1rem;">
+            <h3 style="margin:0;color:white!important;">⚠️ CLAIM FLAGGED — MANUAL REVIEW</h3>
+            <p style="margin:0.3rem 0 0;color:#fde68a!important;">Claim requires manual review before approval</p>
+            </div>""", unsafe_allow_html=True)
+            for reason in flag_reasons:
+                st.warning(f"⚠️ {reason}")
+        else:  # DISAPPROVED
+            st.markdown("""
+            <div style="background:linear-gradient(135deg,#7f1d1d,#dc2626);
+            padding:1.2rem 1.5rem;border-radius:10px;color:white;margin-bottom:1rem;">
+            <h3 style="margin:0;color:white!important;">❌ CLAIM DISAPPROVED</h3>
+            <p style="margin:0.3rem 0 0;color:#fecaca!important;">Claim does not meet PM-JAY eligibility criteria</p>
+            </div>""", unsafe_allow_html=True)
+            for reason in disapproval_reasons:
+                st.error(f"❌ {reason}")
+
+        st.markdown("---")
+
+        col1, col2, col3 = st.columns(3)
+
+        with col1:
+            st.metric("Package Code", predicted_package)
+
+        def format_amt(val):
             try:
-                # Prepare files for API
-                # IMPORTANT: Streamlit file objects need to be at position 0
-                if clinical_notes: clinical_notes.seek(0)
-                if discharge_summary: discharge_summary.seek(0)
-                if photos: photos.seek(0)
-                if hospital_bill: hospital_bill.seek(0)
+                cleaned = str(val).replace(',', '').strip()
+                return f"₹{float(cleaned):,.0f}"
+            except (ValueError, TypeError):
+                return "Variable (per day rate)"
 
-                api_files = {
-                    "clinical_notes": (clinical_notes.name, clinical_notes, clinical_notes.type),
-                    "discharge_summary": (discharge_summary.name, discharge_summary, discharge_summary.type),
-                    "photographs": (photos.name, photos, photos.type),
-                    "hospital_bill": (hospital_bill.name, hospital_bill, hospital_bill.type)
-                }
+        with col2:
+            st.metric("Approved Amount", format_amt(approved_amount))
 
-                # 🔒 DEMO-SAFE OVERRIDE (HACKATHON SUBMISSION)
-                # response = requests.post("http://127.0.0.1:8000/audit", files=api_files)
+        with col3:
+            st.metric("Match Confidence", f"{confidence:.0%}")
 
-                # Mocking succesful backend response
-                data = {
-                    "audit": {
-                        "status": "CLEAN",
-                        "predicted_package": "BM001B",
-                        "approved_amount": 30000,
-                        "flagged_amount": 0,
-                        "reason": "AI-assisted PM-JAY pre-audit validated successfully."
-                    },
-                    "billed_amount": 30000
-                }
+        st.markdown("---")
 
-                # if response.status_code == 200:
-                if True:
-                    # data = response.json()
-                    audit = data.get("audit", {})
-                    
-                    # Map Backend Response to UI Variables (Robust Access)
-                    results = {
-                        "overall_status": audit.get("status", "CLEAN"), # Default Clean
-                        "reason": audit.get("reason", "AI-assisted PM-JAY pre-audit validated successfully."),
-                        "billed_amount": data.get("billed_amount", 30000),
-                        "approved_amount": audit.get("approved_amount", 30000),
-                        "flagged_amount": audit.get("flagged_amount", 0),
-                        "selected_package_code": audit.get("predicted_package") or "BM001B", # Hardcode fallback as requested
-                        "recommendations": []
-                    }
-                    
-                    # FORCE CLEAN STATUS - COMMENTING OUT LOGIC THAT MIGHT FLIP IT
-                    # if results["overall_status"] != "CLEAN":
-                    #     if "package code" in results["reason"].lower():
-                    #         results["recommendations"].append(f"Correct the package code to {results['selected_package_code']}")
-                    #     if "exceeds" in results["reason"].lower():
-                    #          results["recommendations"].append(f"Justify the excess amount of ₹{results['flagged_amount']}")
-                    #     if results['overall_status'] == "REVIEW_REQUIRED":
-                    #          results["recommendations"].append("Review documents manually for discrepancies.")
+        st.markdown("### 🏥 Package Details")
 
-                    extracted = data # For debug view
-                    
-                    # Styles
-                    status = results["overall_status"]
-                    style_class = "status-clean" if status == "CLEAN" else "status-partial" if status == "PARTIAL_APPROVAL" else "status-review"
-                    icon = "✅" if status == "CLEAN" else "⚠️" if status == "PARTIAL_APPROVAL" else "🛑"
-                    
-                    # 1. Overall Status
-                    st.markdown(f"""
-                    <div class="css-card">
-                        <div class="status-box {style_class}">
-                            <h2 style="margin:0; font-size:1.8rem;">{icon} {status.replace('_', ' ')}</h2>
-                            <p style="margin:0.5rem 0 0 0; opacity:0.9;">{results['reason']}</p>
-                        </div>
-                    </div>
-                    """, unsafe_allow_html=True)
-                    
-                    # 2. Financial Metrics
-                    st.markdown("### 💰 Financial Analysis")
-                    m1, m2, m3 = st.columns(3)
-                    with m1:
-                        st.metric("Claims", f"₹{results['billed_amount']:,}", help="Total amount claimed by hospital")
-                    with m2:
-                        st.metric("Approved", f"₹{results['approved_amount']:,}", help="Amount eligible under PM-JAY package")
-                    with m3:
-                        delta = results['billed_amount'] - results['approved_amount']
-                        val_color = "normal" if delta == 0 else "inverse"
-                        st.metric("Disallowed", f"₹{results['flagged_amount']:,}", delta=-delta if delta > 0 else 0, delta_color=val_color)
-                    
-                    st.markdown("---")
+        st.write(f"**Speciality:** {speciality}")
+        st.write(f"**Description:** {description}")
 
-                    # 3. Recommendations
-                    if results["recommendations"]:
-                        st.markdown("### 📋 Action Plan")
-                        for rec in results["recommendations"]:
-                            st.warning(f"**Action Required**: {rec}")
-                    
-                    # 4. Deep Dive
-                    with st.expander("🔍 Deep Dive Analysis"):
-                        st.markdown(f"**Selected Package**: `{results['selected_package_code']}`")
-                        st.markdown("**Evidence Checklist**:")
-                        for doc, present in files_status.items():
-                            st.markdown(f"- {'✅' if present else '❌'} {doc}")
-                        st.markdown("---")
-                        st.caption("Backend API Response:")
-                        st.json(extracted)
-            
-            except Exception as e:
-                st.error(f"Error: {e}")
+        st.markdown("---")
+
+        st.markdown("### 📄 Document Checklist")
+
+        st.write("✅ Clinical Notes" if has_clinical_notes else "❌ Clinical Notes Missing")
+        st.write("✅ Discharge Summary" if has_discharge_summary else "❌ Discharge Summary Missing")
+        st.write("✅ Treatment Photos" if has_treatment_photos else "❌ Treatment Photos Missing")
+        st.write("✅ Hospital Bill" if has_hospital_bill else "❌ Hospital Bill Missing")
 
     else:
-        # Empty State
-        st.markdown(f"""
-        <div class="css-card" style="text-align: center; color: #94a3b8; padding: 4rem;">
-            <h3>👋 Ready to Audit</h3>
-            <p style="color: #94a3b8;">Upload documents on the left and click <b>Run Pre-Audit</b> to see results here.</p>
-        </div>
-        """, unsafe_allow_html=True)
+
+        st.info("Upload claim information and click **Generate Pre-Audit**.")
